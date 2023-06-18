@@ -82,16 +82,10 @@ public class MeleeCombatListener implements Listener {
 
             if (mainHand.getType() == Material.SHIELD) {
                 e.setDamage(e.getDamage() * 0.5);
-
-                Damageable shield = (Damageable) mainHand;
-                shield.setHealth(shield.getHealth() - 1);
             }
 
             if (offHand.getType() == Material.SHIELD) {
                 e.setDamage(e.getDamage() * 0.5);
-
-                Damageable shield = (Damageable) offHand;
-                shield.setHealth(shield.getHealth() - 1);
             }
         }
     }
