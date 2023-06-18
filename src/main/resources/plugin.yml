@@ -1,0 +1,4 @@
+name: EnhancedCombatMechanics
+version: '${project.version}'
+main: jbs.enhancedcombatmechanics.EnhancedCombatMechanics
+api-version: '1.20'
