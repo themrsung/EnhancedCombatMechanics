@@ -1,5 +1,6 @@
 package jbs.enhancedcombatmechanics;
 
+import jbs.enhancedcombatmechanics.listerners.KineticDamageListener;
 import jbs.enhancedcombatmechanics.listerners.MeleeCombatListener;
 import jbs.enhancedcombatmechanics.listerners.PlayerJoinEventListener;
 import jbs.enhancedcombatmechanics.listerners.RangedCombatListener;
@@ -13,6 +14,7 @@ public final class EnhancedCombatMechanics extends JavaPlugin {
 
         new MeleeCombatListener(this);
         new RangedCombatListener(this);
+        new KineticDamageListener(this);
     }
 
 }
