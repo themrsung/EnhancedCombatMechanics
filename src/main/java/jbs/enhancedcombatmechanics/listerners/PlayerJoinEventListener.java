@@ -8,7 +8,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.Objects;
 
-public class PlayerJoinEventListener implements Listener {
+public final class PlayerJoinEventListener implements Listener {
     public PlayerJoinEventListener(EnhancedCombatMechanics plugin) {
         this.plugin = plugin;
     }

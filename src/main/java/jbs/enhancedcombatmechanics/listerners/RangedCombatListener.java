@@ -11,7 +11,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
-public class RangedCombatListener implements Listener {
+public final class RangedCombatListener implements Listener {
     public RangedCombatListener(EnhancedCombatMechanics plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
         this.plugin = plugin;
@@ -22,10 +22,6 @@ public class RangedCombatListener implements Listener {
     public void onEntityDamageByEntity(EntityDamageByEntityEvent e) {
         if (e.getDamager() instanceof Projectile) {
             Projectile projectile = (Projectile) e.getDamager();
-
-            if (projectile instanceof Arrow) {
-                e.setDamage(e.getDamage() * 2);
-            }
 
             if (projectile instanceof Trident) {
                 e.setDamage(e.getDamage() * 3.5);

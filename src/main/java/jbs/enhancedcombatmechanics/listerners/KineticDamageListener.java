@@ -7,7 +7,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
 
-public class KineticDamageListener implements Listener {
+public final class KineticDamageListener implements Listener {
     public KineticDamageListener(EnhancedCombatMechanics plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
         this.plugin = plugin;

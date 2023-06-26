@@ -3,7 +3,6 @@ package jbs.enhancedcombatmechanics.listerners;
 import jbs.enhancedcombatmechanics.EnhancedCombatMechanics;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.entity.Damageable;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -11,7 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
 
-public class MeleeCombatListener implements Listener {
+public final class MeleeCombatListener implements Listener {
     public MeleeCombatListener(EnhancedCombatMechanics plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
         this.plugin = plugin;

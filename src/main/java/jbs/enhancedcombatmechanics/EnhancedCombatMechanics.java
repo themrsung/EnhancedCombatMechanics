@@ -1,9 +1,6 @@
 package jbs.enhancedcombatmechanics;
 
-import jbs.enhancedcombatmechanics.listerners.KineticDamageListener;
-import jbs.enhancedcombatmechanics.listerners.MeleeCombatListener;
-import jbs.enhancedcombatmechanics.listerners.PlayerJoinEventListener;
-import jbs.enhancedcombatmechanics.listerners.RangedCombatListener;
+import jbs.enhancedcombatmechanics.listerners.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class EnhancedCombatMechanics extends JavaPlugin {
@@ -15,6 +12,11 @@ public final class EnhancedCombatMechanics extends JavaPlugin {
         new MeleeCombatListener(this);
         new RangedCombatListener(this);
         new KineticDamageListener(this);
+
+        new FirearmsUsageListener(this);
+        new BodyArmorHandler(this);
+
+        new NuclearWeaponsHandler(this);
     }
 
 }
